@@ -1,0 +1,39 @@
+definitions:
+  tools.ECode:
+    properties:
+      code:
+        type: integer
+      data: {}
+      message:
+        type: string
+    type: object
+info:
+  contact:
+    email: 香香编程喵喵喵
+    name: Vote API
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+paths:
+  /vote:
+    get:
+      consumes:
+      - application/json
+      description: 获取投票信息
+      parameters:
+      - description: vote Id
+        in: query
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/tools.ECode'
+      summary: 获取投票信息
+      tags:
+      - vote
+swagger: "2.0"
