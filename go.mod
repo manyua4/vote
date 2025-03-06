@@ -3,20 +3,6 @@ module mymodule
 go 1.20
 
 require (
-	github.com/gin-gonic/gin v1.9.1
-	github.com/google/uuid v1.4.0
-	github.com/gorilla/sessions v1.2.2
-	github.com/mojocn/base64Captcha v1.3.5
-	github.com/sirupsen/logrus v1.9.3
-	github.com/swaggo/files v1.0.1
-	github.com/swaggo/gin-swagger v1.6.0
-	github.com/swaggo/swag v1.16.2
-	golang.org/x/crypto v0.16.0
-	gorm.io/driver/mysql v1.5.2
-	gorm.io/gorm v1.25.5
-)
-
-require (
 	github.com/KyleBanks/depth v1.2.1 // indirect
 	github.com/bwmarrin/snowflake v0.3.0 // indirect
 	github.com/bytedance/sonic v1.10.2 // indirect
